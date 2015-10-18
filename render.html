@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>render.html</title></head>
+<body>
+<canvas id="wallpaper" width="1280" height="1280"></canvas>
+<canvas id="wallpaperr" width="1280" height="1280"></canvas>
+<script>
+var img = new Image();
+var imgr = new Image();
+img.addEventListener("load", function(){document.getElementById("wallpaper").getContext("2d").drawImage(img,0,0,document.getElementById("wallpaper").width,document.getElementById("wallpaper").height);}, false);
+imgr.addEventListener("load", function(){document.getElementById("wallpaperr").getContext("2d").drawImage(imgr,0,0,document.getElementById("wallpaperr").width,document.getElementById("wallpaperr").height);}, false);
+img.src="vector/vector.svg";
+imgr.src="vector/vectorr.svg";
+</script>
+</body>
+</html>
